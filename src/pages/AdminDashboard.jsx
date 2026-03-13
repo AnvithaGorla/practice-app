@@ -32,8 +32,9 @@ function AdminDashboard() {
     setPosts(data.slice(0,10));
   };
 
-  const logout = ()=>{
-    navigate("/admin");
+  const logout = () => {
+    // redirect to main navbar (home page) after logging out
+    navigate("/");
   };
 
   const filteredUsers = users.filter((u)=>

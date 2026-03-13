@@ -17,7 +17,7 @@ function AdminLogin(){
   const handleSubmit=(e)=>{
     e.preventDefault();
 
-    if(login.username==="admin" && login.password==="admin123"){
+    if(login.username==="admin" && login.password==="admin"){
       navigate("/dashboard");
     }else{
       alert("Invalid Credentials");
@@ -27,19 +27,10 @@ function AdminLogin(){
   return(
 
     <div style={styles.container}>
-
       <h2>Admin Login</h2>
-
       <form style={styles.form} onSubmit={handleSubmit}>
-
-        <input
-          style={styles.input}
-          type="text"
-          name="username"
-          placeholder="Username"
-          onChange={handleChange}
-          required
-        />
+        <input style={styles.input} type="text" name="username"placeholder="Username" onChange={handleChange} required
+    />
 
         <input
           style={styles.input}
