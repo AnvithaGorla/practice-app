@@ -69,12 +69,7 @@ function AdminDashboard() {
           API Data
           </button>
 
-          <button
-          style={styles.logoutBtn}
-          onClick={logout}
-          >
-          Logout
-          </button>
+          <button style={styles.logoutBtn} onClick={logout}>Logout</button>
 
         </div>
 
