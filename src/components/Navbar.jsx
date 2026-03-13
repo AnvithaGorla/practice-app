@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav style={styles.navbar}>
-      <h2 style={styles.logo}>User Management</h2>
+      <Link style={styles.logo} to="/"><h2>User Management</h2></Link>
 
       <div>
         <Link style={styles.link} to="/">Register</Link>
@@ -23,7 +23,9 @@ const styles = {
     color: "white"
   },
   logo: {
-    margin: 0
+    margin: 0,
+    textDecoration: "none",
+    color: "white"
   },
   link: {
     color: "white",
